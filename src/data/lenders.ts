@@ -10,7 +10,7 @@ export interface Lender {
 }
 
 export const lenders: Lender[] = [
-  { name: 'IDFC Credila', loanAmount: 'Up to ₹2 Cr', interestRate: '9.5%', processingFee: '0%' },
+  { name: 'HDFC Credila', loanAmount: 'Up to ₹2 Cr', interestRate: '9.5%', processingFee: '0%' },
   { name: 'Avanse', loanAmount: '₹1.25 Cr', interestRate: '10%', processingFee: '0%' },
   { name: 'Auxilo', loanAmount: '₹1.5 Cr', interestRate: '10.5%', processingFee: '0%' },
   { name: 'Poonawalla', loanAmount: '₹2 Cr', interestRate: '10%', processingFee: '0%' },
