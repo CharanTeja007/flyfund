@@ -193,7 +193,22 @@ export function LoanCalculator() {
             </p>
           </div>
         )}
-
+      <details className="group mt-6 rounded-lg border border-line bg-white px-6 py-4">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-semibold text-navy [&::-webkit-details-marker]:hidden">
+            How this is calculated
+            <ChevronDown size={16} className="text-slate transition-transform duration-300 group-open:rotate-180" aria-hidden />
+          </summary>
+          <div className="mt-4 space-y-2 text-sm leading-relaxed text-slate">
+            <p>Loan tenure and moratorium are converted from years to months (× 12). The annual rate is converted to a monthly rate (÷ 12 ÷ 100).</p>
+            <p><span className="font-medium text-ink">Total PMI</span> = PMI × moratorium months.</p>
+            <p>
+              <span className="font-medium text-ink">EMI</span> uses the standard reducing-balance formula on the loan amount:
+              P × r × (1+r)<sup>N</sup> ÷ ((1+r)<sup>N</sup> − 1). At 0% interest, EMI = P ÷ N.
+            </p>
+            <p><span className="font-medium text-ink">Total EMI repayment</span> = EMI × tenure months.</p>
+            <p><span className="font-medium text-ink">Estimated total outflow</span> = Total PMI + Total EMI repayment. PMI payments are not added to the principal.</p>
+          </div>
+        </details>
       </div>
     </div>
   )
