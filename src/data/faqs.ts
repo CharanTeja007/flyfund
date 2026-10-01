@@ -14,52 +14,52 @@ export const faqGroups: FaqGroup[] = [
     items: [
       {
         q: "I don't have collateral. Can I still get an education loan?",
-        a: 'Yes, unsecured education-loan options may be available for eligible students. Eligibility depends on factors such as your university, course, academic profile, country, co-applicant profile and lender criteria.',
+        a: 'Yes. FlyFund provides access to unsecured education-loan options for eligible student profiles. Our team will assess your requirements and guide you toward suitable lenders offering collateral-free education financing. Final sanction is issued by the respective lender after its eligibility and credit assessment.',
       },
       {
-        q: 'Can I apply without collateral?',
-        a: 'Depending on your profile and the lender, unsecured education-loan options may be available. Final eligibility is determined by the respective lender.',
+        q: 'Can I get an education loan for studying abroad?',
+        a: 'Yes. FlyFund helps students explore education-loan options for overseas education across destinations such as the USA, UK, Canada, Australia, Germany, Ireland, Italy and other international destinations. Our team guides you through the application and lender process.',
+      },
+      {
+        q: 'Can I get a loan without paying a processing fee?',
+        a: 'Yes. FlyFund currently displays loan options with zero processing fee across the lenders listed on this website, subject to the applicable lender/program terms.',
+      },
+      {
+        q: 'I don’t know which lender is right for me. What should I do?',
+        a: 'You do not need to approach every lender separately. Submit one application to FlyFund and our team will review your requirements and guide you through the suitable available education-loan options.',
+      },
+      {
+        q: 'Can my education loan cover tuition and living expenses?',
+        a: 'Yes. Education-loan structures can cover eligible tuition and education-related expenses such as accommodation, living expenses, travel and study materials, depending on the approved loan structure and lender terms.',
       },
       {
         q: 'My parents do not have a very high income. Can I still apply?',
-        a: 'Loan eligibility depends on multiple factors, not income alone. Academic profile, university, course, co-applicant profile, repayment capacity, collateral where applicable and lender policies may all be considered.',
+        a: 'Yes. Your application can still be evaluated. Education-loan assessment considers multiple factors including the student’s academic profile, university, course, co-applicant profile, repayment capacity and lender criteria. FlyFund will guide you through the appropriate option.',
       },
       {
-        q: 'Do I need a co-applicant?',
-        a: 'Co-applicant requirements vary depending on the lender and loan type. Some loan options may require a parent or other eligible co-applicant.',
-      },
-      {
-        q: 'Can I apply before receiving my final admission letter?',
-        a: 'You may be able to begin the process depending on the lender and the stage of your admission. Final documentation and approval requirements vary by provider.',
+        q: 'How much education loan can I get?',
+        a: 'FlyFund provides access to education-loan options ranging across the lender panel shown on this website. The final sanctioned amount is determined after the lender evaluates your education cost, profile, co-applicant details and applicable eligibility criteria.',
       },
     ],
   },
   {
-    title: 'Loans & lenders',
+    title: 'Application & process',
     items: [
       {
-        q: 'Can I apply through FlyFund without knowing which lender to choose?',
-        a: 'Yes. FlyFund helps you explore suitable education-loan options from multiple providers through one application, making it easier to understand the available choices.',
+        q: 'How long does the loan process take?',
+        a: 'FlyFund begins the process as soon as you submit your details. Our team guides you through documentation and lender coordination so the application can move forward efficiently. Final sanction and disbursement timelines are determined by the respective lender’s process.',
       },
       {
-        q: 'Can I get a loan for studying in the USA, UK, Canada or Australia?',
-        a: 'Education-loan options may be available for major study-abroad destinations including the USA, UK, Canada, Australia, Germany and Ireland, subject to lender and course eligibility.',
+        q: 'Do I need a co-applicant?',
+        a: 'Co-applicant requirements are determined by the specific lender and loan structure. FlyFund will clearly explain the applicable requirement for the loan option being considered and guide you through the process.',
       },
       {
-        q: 'Can an education loan cover tuition fees and living expenses?',
-        a: 'Depending on the lender and approved loan structure, education financing may cover tuition and certain eligible education-related expenses such as accommodation and living costs.',
+        q: 'Can I apply before receiving my final admission letter?',
+        a: 'Yes, you can initiate your education-loan enquiry with FlyFund before final admission documentation is complete. Our team will explain the lender-specific documents required at each stage of the application.',
       },
       {
-        q: 'How much education loan can I get?',
-        a: "The eligible loan amount depends on factors including your education cost, university, course, financial profile, co-applicant profile and the selected lender's policies.",
-      },
-      {
-        q: 'How long does the education-loan process take?',
-        a: 'Processing time varies by lender and documentation. FlyFund helps coordinate the process and documentation to make the journey simpler.',
-      },
-      {
-        q: 'Is there any processing fee?',
-        a: 'FlyFund currently displays education-loan options with zero processing fee for the lenders shown on this website, subject to applicable lender/program terms.',
+        q: 'Can I apply for a Master’s education loan?',
+        a: 'Yes. FlyFund supports education-financing enquiries for Master’s programs across international destinations. Submit your details and our team will guide you through the available options.',
       },
     ],
   },
@@ -67,16 +67,20 @@ export const faqGroups: FaqGroup[] = [
     title: 'Referral program',
     items: [
       {
-        q: 'How does the referral reward work?',
-        a: "If someone referred you to FlyFund, enter their name or referral code in the application form. Eligible referral rewards are processed after the referred student's qualifying loan is successfully disbursed.",
+        q: 'How does the referral program work?',
+        a: 'Simply enter the referral name or referral code in the application form. FlyFund will manually verify the referral and process the applicable referral reward after the referred student’s qualifying loan is successfully disbursed.',
       },
       {
         q: 'How much can I earn through referrals?',
-        a: 'Eligible referrals can earn a cash reward of up to ₹20,000, subject to the applicable referral-program terms.',
+        a: `₹10–20 Lakhs disbursement → ₹5,000 referral reward
+₹20–30 Lakhs disbursement → ₹7,000 referral reward
+₹30–48 Lakhs disbursement → ₹10,000 referral reward
+₹48–60 Lakhs disbursement → ₹15,000 referral reward
+Above ₹60 Lakhs disbursement → ₹20,000 referral reward`,
       },
       {
         q: 'When will my referral reward be credited?',
-        a: 'The applicable referral reward is intended to be credited within 24–48 hours after qualifying loan disbursement, subject to the referral-program terms.',
+        a: 'The applicable referral reward will be processed within 24–48 hours after the qualifying loan disbursement, subject to referral verification and the applicable referral-program terms.',
       },
     ],
   },
