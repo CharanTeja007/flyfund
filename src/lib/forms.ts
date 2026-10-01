@@ -6,14 +6,26 @@
  * otherwise the SSR function intercepts the request before Netlify's form
  * handler sees it.
  */
-export async function submitNetlifyForm(formName: string, fields: Record<string, string>) {
-  const body = new URLSearchParams({ 'form-name': formName, ...fields }).toString()
-  const res = await fetch('/__forms.html', {
+export async function submitNetlifyForm(
+  formName: string,
+  fields: Record<string, string>,
+) {
+  const body = new URLSearchParams({
+    'form-name': formName,
+    ...fields,
+  }).toString()
+
+  const res = await fetch('/', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
     body,
   })
-  if (!res.ok) throw new Error(`Form submission failed (${res.status})`)
+
+  if (!res.ok) {
+    throw new Error(`Form submission failed (${res.status})`)
+  }
 }
 
 /** Submission timestamp in a spreadsheet-friendly, India-local format: 2026-09-30 14:05:12 IST */
