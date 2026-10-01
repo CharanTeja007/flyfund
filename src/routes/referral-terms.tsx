@@ -39,16 +39,87 @@ export const Route = createFileRoute('/referral-terms')({
       </p>
 
       <h2>4. Reward amount</h2>
-      <p>
-        Eligible referrals can earn a cash reward of <strong>up to ₹20,000</strong>. The exact amount depends on the
-        qualifying loan and will be confirmed by FlyFund.
-      </p>
+<p>
+  Eligible referrals can earn a cash reward based on the qualifying loan
+  disbursement amount. The applicable reward structure is:
+</p>
+
+<div className="my-8 overflow-hidden rounded-xl border border-line bg-white">
+  <div className="overflow-x-auto">
+    <table className="w-full min-w-[520px] border-collapse text-left">
+      <thead>
+        <tr className="border-b border-line bg-mist/60">
+          <th className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            Loan Disbursement Amount
+          </th>
+          <th className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            Referral Reward
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr className="border-b border-line">
+          <td className="px-6 py-4 text-sm text-slate sm:px-7">
+            ₹10–20 Lakhs
+          </td>
+          <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            ₹5,000
+          </td>
+        </tr>
+
+        <tr className="border-b border-line">
+          <td className="px-6 py-4 text-sm text-slate sm:px-7">
+            ₹20–30 Lakhs
+          </td>
+          <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            ₹7,000
+          </td>
+        </tr>
+
+        <tr className="border-b border-line">
+          <td className="px-6 py-4 text-sm text-slate sm:px-7">
+            ₹30–48 Lakhs
+          </td>
+          <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            ₹10,000
+          </td>
+        </tr>
+
+        <tr className="border-b border-line">
+          <td className="px-6 py-4 text-sm text-slate sm:px-7">
+            ₹48–60 Lakhs
+          </td>
+          <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+            ₹15,000
+          </td>
+        </tr>
+
+        <tr>
+          <td className="px-6 py-4 text-sm text-slate sm:px-7">
+            Above ₹60 Lakhs
+          </td>
+          <td className="px-6 py-4 text-sm font-semibold text-teal-deep sm:px-7">
+            ₹20,000
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p>
+  The applicable reward is determined based on the qualifying loan
+  disbursement amount and is subject to successful verification under these
+  Referral Program Terms.
+</p>
 
       <h2>5. Payout timing</h2>
-      <p>
-        The applicable reward is intended to be credited within <strong>24–48 hours after qualifying loan
-        disbursement</strong>, once verification is complete and valid payout details have been provided.
-      </p>
+<p>
+  The applicable referral reward is credited within{' '}
+  <strong>24–48 hours after qualifying loan disbursement</strong>,
+  subject to completion of verification and receipt of valid payout details.
+</p>
 
       <h2>6. Verification</h2>
       <p>
