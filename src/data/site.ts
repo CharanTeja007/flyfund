@@ -4,11 +4,11 @@ export const site = {
   url: 'https://flyfund.in',
   email: 'info@flyfund.in',
   phones: [
-    { display: '+91 6302812827', tel: '+916302812827', wa: '916302812827' },
     { display: '+91 9059842672', tel: '+919059842672', wa: '919059842672' },
+    { display: '+91 8519956869', tel: '+918519956869', wa: '918519956869' },
   ],
   address: [
-    'Office No: 20, 3rd Floor,',
+    'Fly Fund, Office No: 20, 3rd Floor,',
     'Padmavathi Plaza, Near KPHB Metro,',
     'Hyderabad - 500072',
   ],
