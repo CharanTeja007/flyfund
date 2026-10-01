@@ -31,7 +31,7 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 bg-white/90 backdrop-blur-md transition-[border-color,box-shadow] duration-300 ${
+      className={`sticky top-0 z-50 bg-white/90 backdrop-blur-md transition-[border-color,box-shadow] duration-300 ${
         scrolled || open ? 'border-b border-line shadow-[0_6px_24px_-18px_rgb(23_59_95/0.35)]' : 'border-b border-transparent'
       }`}
     >
@@ -78,40 +78,56 @@ export function Header() {
       </div>
 
       {/* Mobile menu */}
-      <div
-        id="mobile-menu"
-        className={`xl:hidden fixed inset-x-0 top-[72px] bottom-0 bg-white transition-[opacity,visibility] duration-300 lg:top-20 ${
-          open ? 'visible opacity-100' : 'invisible opacity-0'
-        }`}
-      >
-        <nav aria-label="Mobile" className="container-page flex h-full flex-col overflow-y-auto pb-10 pt-4">
-          <ul className="divide-y divide-line border-y border-line">
-            {primaryNav.map((item, i) => (
-              <li
-                key={item.to}
-                className={`transition-[opacity,transform] duration-500 ${open ? 'translate-y-0 opacity-100' : '-translate-y-1 opacity-0'}`}
-                style={{ transitionDelay: open ? `${i * 30}ms` : '0ms' }}
-              >
-                <Link
-                  to={item.to}
-                  activeOptions={{ exact: item.to === '/' }}
-                  tabIndex={open ? 0 : -1}
-                  className="flex items-center justify-between py-4 text-[1.0625rem] font-medium text-ink data-[status=active]:text-navy"
-                >
-                  {item.label}
-                  <span aria-hidden className="text-line-strong">→</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <Link to="/apply" tabIndex={open ? 0 : -1} className="btn btn-primary mt-8 w-full">
-            Apply Now
+<div
+  id="mobile-menu"
+  className={`xl:hidden absolute inset-x-0 top-full z-50 bg-white transition-[opacity,visibility] duration-300 ${
+    open ? 'visible opacity-100' : 'invisible opacity-0'
+  }`}
+>
+  <nav
+    aria-label="Mobile"
+    className="container-page max-h-[calc(100dvh-72px)] overflow-y-auto pb-10 pt-4"
+  >
+    <ul className="divide-y divide-line border-y border-line">
+      {primaryNav.map((item, i) => (
+        <li
+          key={item.to}
+          className={`transition-[opacity,transform] duration-500 ${
+            open ? 'translate-y-0 opacity-100' : '-translate-y-1 opacity-0'
+          }`}
+          style={{ transitionDelay: open ? `${i * 30}ms` : '0ms' }}
+        >
+          <Link
+            to={item.to}
+            activeOptions={{ exact: item.to === '/' }}
+            tabIndex={open ? 0 : -1}
+            className="flex items-center justify-between py-4 text-[1.0625rem] font-medium text-ink data-[status=active]:text-navy"
+          >
+            {item.label}
+            <span aria-hidden className="text-line-strong">
+              →
+            </span>
           </Link>
-          <a href={`tel:${site.phones[0].tel}`} tabIndex={open ? 0 : -1} className="btn btn-secondary mt-3 w-full">
-            Call {site.phones[0].display}
-          </a>
-        </nav>
-      </div>
-    </header>
+        </li>
+      ))}
+    </ul>
+
+    <Link
+      to="/apply"
+      tabIndex={open ? 0 : -1}
+      className="btn btn-primary mt-8 w-full"
+    >
+      Apply Now
+    </Link>
+
+    <a
+      href={`tel:${site.phones[0].tel}`}
+      tabIndex={open ? 0 : -1}
+      className="btn btn-secondary mt-3 w-full"
+    >
+      Call {site.phones[0].display}
+    </a>
+  </nav>
+</div>
   )
 }
