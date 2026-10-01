@@ -129,5 +129,6 @@ export function Header() {
     </a>
   </nav>
 </div>
+    </header> 
   )
 }
