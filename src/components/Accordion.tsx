@@ -36,7 +36,9 @@ export function Accordion({ items }: { items: { q: string; a: string }[] }) {
             </h3>
             <div id={panelId} role="region" aria-labelledby={btnId} className="accordion-panel" data-open={isOpen} aria-hidden={!isOpen}>
               <div>
-                <p className="max-w-3xl pb-7 pr-12 text-[1rem] leading-[1.8] text-slate">{item.a}</p>
+                <p className="max-w-3xl whitespace-pre-line pb-7 pr-12 text-[1rem] leading-[1.8] text-slate">
+  {item.a}
+</p>
               </div>
             </div>
           </div>
