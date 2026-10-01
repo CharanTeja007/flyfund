@@ -53,7 +53,7 @@ export function ApplyForm() {
         country: fields.country,
         referral: fields.referral.trim(),
         submitted_at: submissionTimestamp(),
-        'bot-field': bot,
+        'bot-field': '',
       })
       setStatus('success')
       setFields(empty)
