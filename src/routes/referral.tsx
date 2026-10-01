@@ -90,8 +90,96 @@ function Referral() {
           <div className="mt-14">
             <Timeline steps={referralSteps} />
           </div>
+      <section aria-labelledby="reward-structure" className="mt-20">
+  <div className="grid items-start gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+    
+    {/* Left side */}
+    <div>
+      <p className="eyebrow">Reward Structure</p>
 
-          <Reveal className="mt-16 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2">
+      <h2
+        id="reward-structure"
+        className="mt-4 text-[1.875rem] leading-tight sm:text-[2.375rem]"
+      >
+        <span className="text-teal-deep">Up to ₹20,000</span>
+        <br />
+        for a successful referral
+      </h2>
+
+      <p className="mt-5 max-w-md text-[1.0625rem] leading-relaxed text-slate">
+        Reward credited within{" "}
+        <strong className="font-semibold text-ink">24–48 hours</strong>{" "}
+        after qualifying disbursement.
+      </p>
+    </div>
+
+    {/* Right side - Reward table */}
+    <div className="overflow-hidden rounded-xl border border-line bg-white">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[520px] border-collapse text-left">
+          <thead>
+            <tr className="border-b border-line bg-mist/60">
+              <th className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                Loan Disbursement Amount
+              </th>
+              <th className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                Referral Reward
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr className="border-b border-line">
+              <td className="px-6 py-4 text-sm text-slate sm:px-7">
+                ₹10–20 Lakhs
+              </td>
+              <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                ₹5,000
+              </td>
+            </tr>
+
+            <tr className="border-b border-line">
+              <td className="px-6 py-4 text-sm text-slate sm:px-7">
+                ₹20–30 Lakhs
+              </td>
+              <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                ₹7,000
+              </td>
+            </tr>
+
+            <tr className="border-b border-line">
+              <td className="px-6 py-4 text-sm text-slate sm:px-7">
+                ₹30–48 Lakhs
+              </td>
+              <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                ₹10,000
+              </td>
+            </tr>
+
+            <tr className="border-b border-line">
+              <td className="px-6 py-4 text-sm text-slate sm:px-7">
+                ₹48–60 Lakhs
+              </td>
+              <td className="px-6 py-4 text-sm font-semibold text-navy sm:px-7">
+                ₹15,000
+              </td>
+            </tr>
+
+            <tr>
+              <td className="px-6 py-4 text-sm text-slate sm:px-7">
+                Above ₹60 Lakhs
+              </td>
+              <td className="px-6 py-4 text-sm font-semibold text-teal-deep sm:px-7">
+                ₹20,000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+          /*<Reveal className="mt-16 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2">
             <div className="bg-paper p-8 sm:p-10">
               <p className="text-sm text-slate">Referral reward</p>
               <p className="mt-2 text-3xl font-semibold text-navy sm:text-4xl">Up to ₹20,000</p>
@@ -101,7 +189,7 @@ function Referral() {
               <p className="mt-2 text-3xl font-semibold text-navy sm:text-4xl">24–48 hours</p>
               <p className="mt-1 text-sm text-slate">after qualifying disbursement</p>
             </div>
-          </Reveal>
+          </Reveal> */
           <p className="mt-6 text-sm text-slate">
             {referralTermsNote}{' '}
             <Link to="/referral-terms" className="font-semibold text-navy underline underline-offset-4">
