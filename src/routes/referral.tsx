@@ -179,7 +179,7 @@ function Referral() {
     </div>
   </div>
 </section>
-          /*<Reveal className="mt-16 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2">
+          {/*<Reveal className="mt-16 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2">
             <div className="bg-paper p-8 sm:p-10">
               <p className="text-sm text-slate">Referral reward</p>
               <p className="mt-2 text-3xl font-semibold text-navy sm:text-4xl">Up to ₹20,000</p>
@@ -189,7 +189,7 @@ function Referral() {
               <p className="mt-2 text-3xl font-semibold text-navy sm:text-4xl">24–48 hours</p>
               <p className="mt-1 text-sm text-slate">after qualifying disbursement</p>
             </div>
-          </Reveal> */
+          </Reveal> */}
           <p className="mt-6 text-sm text-slate">
             {referralTermsNote}{' '}
             <Link to="/referral-terms" className="font-semibold text-navy underline underline-offset-4">
