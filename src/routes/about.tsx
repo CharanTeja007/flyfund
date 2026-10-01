@@ -1,4 +1,3 @@
-```tsx
 import { createFileRoute } from '@tanstack/react-router'
 import { Compass, Handshake, Layers, GraduationCap } from 'lucide-react'
 import { seo } from '@/lib/seo'
@@ -139,4 +138,3 @@ function About() {
     </>
   )
 }
-```
